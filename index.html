@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="leftColumn">
+        <div class="phone">
+            <img src="./assets/bg.png" id="backgroundImage">
+            <img src="./assets/ig1.png" id="imageFade"> 
+        </div>
+    </div>
+    <div class="rightColumn">
+        <div class="loginBox">
+            <div class="inputBox">
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="boxes">
+                    <input required type="text" id="name" placeholder="Phone number, username, or email">
+                    <input required type="password" id="password" placeholder="Password" maxlength="20"><br>
+                    <button class="button" type="submit">Log In</button>
+                    <h2 class="line">or</h2>
+                    <h2 class="login"><a href="https://facebook.com"><img src="./assets/fblogo.png" alt="">Log in with Facebook</h2></a>
+                </div>
+                    <h3><a href="https://www.instagram.com/accounts/password/reset/">Forgot password?</h3></a>
+            </div>        
+        </div>
+            <div class="signupBox">
+                <h2 class="signup">Don't have an account?<b><a href="https://www.instagram.com/accounts/emailsignup/" id="signupLink">&nbsp; Sign up</a></b></h2>
+            </div>
+        <div class="gettheapp">
+            <h2 class="getapptext">Get the app.</h2>
+            <div class="appButtons">
+                <div class="appstore"><img src="./assets/appstore.png" alt=""></div>
+                <div class="googleplay"><img src="./assets/googleplay.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="footerStyle">
+            <li><a href="https://about.meta.com/">Meta</a></li>
+            <li><a href="https://about.instagram.com/">About</a></li>
+            <li><a href="https://about.instagram.com/blog">Blog</a></li>
+            <li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>
+            <li><a href="https://help.instagram.com/">Help</a></li>
+            <li><a href="https://developers.facebook.com/docs/instagram">API</a></li>
+            <li><a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacy</a></li>
+            <li><a href="https://help.instagram.com/581066165581870/">Terms</a></li>
+            <li><a href="https://www.instagram.com/directory/profiles/">Top Accounts</a></li>
+            <li><a href="https://www.instagram.com/explore/locations/">Locations</a></li>
+            <li><a href="https://www.instagram.com/web/lite/">Instagram Lite</a></li>
+            <li><a href="https://www.facebook.com/help/instagram/261704639352628">Contact Uploading & Non-Users</a></li>
+        </ul>
+        <div class="secondFooterLine">
+            <div class="dropdown">
+                <button class="language">English</button>
+                <div class="dropdownItems">
+                 <p>Dansk</p>
+                 <p>Deustch</p>
+                 <p>English</p>
+                 <p>English (UK)</p>
+                 <p>Filipino</p>
+                 <p>Italiano</p>
+                </div>
+            </div>
+            <h2 class="footerStyle">© 2023 Instagram from Meta</h2>
+        </div>
+    </div>
+    <script>
+        var images = ["./assets/ig1.png", "./assets/ig2.png", "./assets/ig3.png","./assets/ig4.png"];
+
+        var imageSlideshow = document.getElementById("imageFade");
+        setInterval(nextPic, 3000);
+        
+        let i = 0;
+        
+        function nextPic() {
+            i++;
+            if (i > images.length - 1) i = 0;
+            //imageSlideshow.style.backgroundImage = `url(${images[i]})`;
+            imageSlideshow.src= images[i];
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+body, html {
+    height:100%;
+    background-color: #fdfdfd;
+}
+
+.leftColumn {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+
+.rightColumn {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0px; 
+    top: 0px; 
+}
+
+.loginBox {
+    margin-top:10%;
+}
+
+.inputBox {
+    width:40%;
+    padding-top:5%;
+    display:inline-block;
+    background-color:#fff;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.boxes {
+    text-align: center;
+    margin-top:8%;
+}
+
+.button {
+    padding: 7px;
+    border-radius: 10px;
+    width:87%;
+    border: none;
+    background-color: rgb(40, 136, 209);
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top:5%;
+    cursor: pointer;
+}
+
+#name {
+    font-size:12px;
+    border:1px solid  rgb(228, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#fdfdfd;
+    border-radius: 2px;
+    padding:8px;
+    margin:2px;
+    width:80%;
+}
+
+#password{
+    font-size:12px;
+    border:1px solid rgb(228, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#fdfdfd;
+    border-radius: 2px;
+    padding:8px;
+    margin:2px;
+    width:80%;
+}
+
+#saveInfo {    
+    margin-top:6%;
+}
+
+label {
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img {
+    height:50px;
+    width:160px;
+}
+
+.logo {
+    display: flex;
+    justify-content:center;
+}
+
+.line {
+    display:block;
+    color:rgb(119, 119, 119);
+    font-size:12px;
+    text-transform:uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    margin-top: 6%;
+    overflow: hidden;
+}
+
+.line:before, .line:after {
+    content:"";
+    display:inline-block;
+    position: relative;
+    vertical-align: middle;
+    height:0.6px;
+    width:30%;
+    background:rgb(228, 228, 228);
+}
+
+.line:before {
+    right: 2em;
+    margin-left: -50%;
+}
+  
+.line:after {
+   left: 2em;
+   margin-right: -50%;
+}
+
+
+.login img {
+    object-fit:cover;
+    height:15px;
+    width:15px;
+    margin-right:1%;
+}
+
+.login {
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    text-align:center;
+    margin-top:10%;
+    color:#385185;
+}
+
+a:visited {
+    text-decoration:none;
+    color: #385185;
+}
+
+a:link {
+    text-decoration:none;
+    color:#385185;
+}
+
+h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    text-align:center;
+    color:#000;
+    font-weight:100;
+    margin-top:6%;
+    margin-bottom:6%;
+}
+
+.signupBox {
+    margin-top:1%;
+    width:40%;
+    padding-top:1%;
+    padding-bottom:1%;
+    display:inline-block;
+    background-color:#fff;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.signup {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    text-align:center;
+    justify-content:center;
+    display:flex;
+    font-weight:100;
+}
+
+.signup:link {
+    color:#b3dbff;
+}
+
+.getapptext {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    font-weight:100;
+    text-align:center;
+    width:40%;
+    margin-top:2%;
+}
+
+.appButtons {
+    display:grid;
+    grid-template:
+    "a b" 50px
+    ; 
+    width:40%;
+    text-align: center;
+}
+
+.googleplay {
+    grid-area:b;
+}
+
+.appstore {
+    grid-area:a;
+}
+
+.appstore img, .googleplay img {
+    object-fit:cover;
+    width:75%;
+}
+
+.leftColumn img {
+    object-fit:cover;
+    width:55%;
+    height:75%;
+}
+
+.phone {
+    margin-left:45%;
+    margin-top:10%;
+}
+
+#imageFade {
+    position:relative;
+    z-index:1;
+    object-fit:cover;
+    margin-left:33%;
+    margin-top:5%;
+    height:74%;
+    width:55%;
+}
+
+#backgroundImage {
+    position:absolute;
+    z-index:0;
+}
+
+.footer {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    justify-content:center;
+    position:absolute;
+    flex-wrap:wrap;
+    bottom:0;
+    text-align:center;
+    width:100%;
+    height:10%;
+}
+
+.footerStyle {
+    color: #828282;
+    font-size:11px;
+    font-weight:100;
+    padding:0;
+}
+
+.footerStyle li {
+    display:inline-block;
+    color: #828282;
+}
+
+.footerStyle a {
+    color: #828282;
+}
+
+.footerStyle a:hover {
+    text-decoration:underline;
+}
+
+.language {
+    font-size:11px;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:100;
+    background-color:#fff;
+    color: #828282;
+    border:none;
+}
+
+.dropdownItems {
+    display:none;
+    position:absolute;
+    color:#828282;
+}
+
+.dropdown {
+    position:relative;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+.secondFooterLine {
+    text-align:center;
+    justify-content:center;
+    display:flex;
+}
+
+#signupLink {
+    color: rgb(0, 149, 246);
+}
+
+@media only screen and (max-width:1180px){
+.leftColumn {
+    display:none;
+}
+
+.rightColumn {
+    width:100%;
+}
+
+.loginBox {
+    width:100%;
+}
+
+.inputBox {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25%;
+}
+
+.signupBox {
+    display:block;
+    margin-left:auto;
+    margin-right:auto; 
+}
+
+.getapptext {
+    display:block;
+    margin-left:auto;
+    margin-right:auto; 
+}
+
+.appButtons {
+    display:grid;
+    grid-template:
+    "a b" 50px
+    ; 
+    width:40%;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto; 
+}
+}
+
+
+@media only screen and (max-width:896px){
+    .inputBox {
+        width:100%;
+        border:none;
+        margin-top:0;
+    }
+
+    .logo img {
+        height:60px;
+        width:200px;
+        object-fit:cover;
+    }
+
+    .boxes {
+        width:80%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .footer {
+        justify-content:stretch;
+        margin-left:6%;
+        margin-right:auto;
+        width:80%;
+        bottom:8%;
+    }
+
+    .footerStyle {
+        font-size:13px;
+    }
+
+    .signupBox {
+        border:none;
+        margin-top:15%;
+        margin-bottom:15%;
+        width:100%;
+        font-size:14px;
+    }
+
+    .appButtons {
+        width:100%;
+    }
+
+    .getapptext {
+        font-size:14px;
+    }
+}
