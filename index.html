@@ -56,20 +56,16 @@
             <li><a href="https://www.instagram.com/web/lite/">Instagram Lite</a></li>
             <li><a href="https://www.facebook.com/help/instagram/261704639352628">Contact Uploading & Non-Users</a></li>
         </ul>
-        <div class="secondFooterLine">
-            <div class="dropdown">
-                <button class="language">English</button>
-                <div class="dropdownItems">
-                 <p>Dansk</p>
-                 <p>Deustch</p>
-                 <p>English</p>
-                 <p>English (UK)</p>
-                 <p>Filipino</p>
-                 <p>Italiano</p>
-                </div>
-            </div>
-            <h2 class="footerStyle">© 2023 Instagram from Meta</h2>
+        <div class="footerStyle2">
+            <select name="language" id="language">
+                <option value="english">English</option>
+                <option value="chinese">Chinese</option>
+                <option value="dansk">Danish</option>
+                <option value="japanese">Japanese</option>
+            </select>
+            <h2 id="meta">© 2023 Instagram from Meta</h2>
         </div>
+    </div>
     </div>
     <script>
         var images = ["./assets/ig1.png", "./assets/ig2.png", "./assets/ig3.png","./assets/ig4.png"];
@@ -82,9 +78,9 @@
         function nextPic() {
             i++;
             if (i > images.length - 1) i = 0;
-            //imageSlideshow.style.backgroundImage = `url(${images[i]})`;
             imageSlideshow.src= images[i];
         };
+
     </script>
 </body>
 </html>
